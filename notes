@@ -1,0 +1,10 @@
+create ast:
+in package.json:  "build:ast": "node node_modules/carmi/bin/carmi --no-cache --ast --debug --format iife --source bolt-main/src/client/bolt.carmi.js > bolt-main/gen/client/bolt.ast.json",
+
+example:
+_.keys(boltInstance).filter(k => /fonts/.test(k))
+boltInstance.debugApi.printSimpleHistoryAst('$map_fonts_42_10_1448')
+boltInstance.debugApi.getHistoricAst('$map_fonts_42_10_1448')
+boltInstance.debugApi.getrelevantHistoryIndexes('$keyBy_runtime_88_10_1113')
+boltInstance.debugApi.printSimpleHistoryAst('$keyBy_runtime_88_10_1113', 0)
+boltInstance.debugApi.printSimpleHistoryAst('$keyBy_runtime_88_10_1113', 79)
